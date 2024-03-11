@@ -1,0 +1,16 @@
+{
+  "name": "atividadespentregar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jalisson Ternus",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^29.1.1",
+    "electron-reload": "^2.0.0-alpha.1"
+  }
+}
