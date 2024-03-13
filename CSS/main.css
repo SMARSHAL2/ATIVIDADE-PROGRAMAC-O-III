@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+}
+
+#menu-h{
+    background-color: rgb(37, 37, 39);
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#menu-h ul {
+    max-width: 800px;
+    list-style: none;
+    padding: 0;
+}
+
+#menu-h ul li {
+    display: inline;
+}
+
+#menu-h ul li a {
+    color: #FFF;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+}
+
+#menu-h ul li a:hover {
+    background-color: rgb(24, 139, 233);
+}
+
+#menu-h ul li:last-child a {
+    float: right;
+    background-color: rgb(24, 139, 233);
+}
+
+.degrade {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, darkblue, lightblue);
+}
+
+.Banner {
+    display: block;
+    margin: 0 auto;
+    max-width: 800px; 
+    opacity: 0.9;
+    margin-top: 200px;
+    position: relative;
+    z-index: -1;
+}
+
+

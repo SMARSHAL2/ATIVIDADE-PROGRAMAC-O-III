@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    color: #323232;
+    border: none;
+}
+
+.degrade {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, purple, white);
+}
+
+#main-container {   
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+#main-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Alteração aqui */
+}
+
+.full-box input {
+    flex: 1;
+    position: relative;
+    margin-bottom: 20px;
+    width: calc(100% - 140px);
+    box-sizing: border-box;
+
+}
+
+.half-box input {
+    flex: 1;
+    position: relative;
+    margin-bottom: 40px;
+    width: 35%;
+}
+
+.spacing {
+    margin-right: 2.5%;
+}
+
+label {
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+input {
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: .9rem;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+input:focus {
+    border-color: #E60084;
+}
+
+#buscarCEP {
+    background-color: #E60084;
+    width: 10%;
+    color: #FFF;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  #buscarCidade {
+    background-color: #E60084;
+    width: 10%;
+    color: #FFF;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    cursor: pointer;
+  }
+  #buscarIntervalo {
+    background-color: #E60084;
+    width: 30%;
+    color: #FFF;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    cursor: pointer;
+    margin-left: auto; 
+    margin-right: auto; 
+    display: block;
+}
+
+
+#resultado {
+    width: 100%; 
+    height: 200px;
+    padding: 10px; 
+    font-family: Arial, sans-serif; 
+    font-size: 14px; 
+    border: 2px solid #ccc; 
+    border-radius: 5px; 
+    resize: none; 
+    box-sizing: border-box; 
+}
+
+
+#resultado:focus {
+    border-color: #E60084;
+    outline: none; 
+}
+
+a{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    background-color: #E60084;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+  }

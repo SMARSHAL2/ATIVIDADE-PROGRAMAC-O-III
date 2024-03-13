@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Intercalar Palavras</title>
+<link rel="stylesheet" href="../css/InverterPalavras.css">
+</head>
+<body class="degrade">
+  <form id="nomeForm">
+    <a href="index.html">Voltar</a>
+    <label for="palavra1">Palavra 1:</label>
+    <input type="text" id="palavra1" name="palavra1"><br>
+    <label for="palavra2">Palavra 2:</label>
+    <input type="text" id="palavra2" name="palavra2"><br>
+    <label for="resultado">Resultado:</label>
+    <input type="text" id="resultado" name="resultado" disabled><br>
+    <button type="button" onclick="intercalarPalavras()">Mesclar</button>
+  </form>
+
+  <script>
+    function intercalarPalavras() {
+      var palavra1 = document.getElementById('palavra1').value;
+      var palavra2 = document.getElementById('palavra2').value;
+      var resultado = intercalar(palavra1, palavra2);
+      document.getElementById('resultado').value = resultado;
+    }
+
+    function intercalar(palavra1, palavra2) {
+      var resultado = '';
+      var maxLength = Math.max(palavra1.length, palavra2.length);
+      for (var i = 0; i < maxLength; i++) {
+        if (i < palavra1.length) {
+          resultado += palavra1.charAt(i);
+        }
+        if (i < palavra2.length) {
+          resultado += palavra2.charAt(i);
+        }
+      }
+      return resultado;
+    }
+  </script>
+</body>
+</html>

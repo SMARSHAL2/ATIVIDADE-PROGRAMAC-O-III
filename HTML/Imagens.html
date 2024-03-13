@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Banner Rotativo</title>
+<link rel="stylesheet" href="../css/Imagens.css">
+
+</head>
+<body class="degrade">
+  <a href="index.html">Voltar</a>
+  <div id="banner-container">
+  <img id="banner" src="../Imagens/Unoesc2.jpg" alt="Banner">
+  </div>
+  <br>
+  <button onclick="pausarBanner()">Pausar</button>
+  
+  <script>
+    var banners = ["../Imagens/Unoesc2.jpg", "../Imagens/Imagens1.jpg", "../Imagens/Imagens2.jpg", "../Imagens/Imagens3.jpg", "../Imagens/Imagens4.jpg", "../Imagens/Imagens5.jpg"];
+    var bannerAtual = 0;
+    var intervalo;
+
+    function trocaBanner() {
+      bannerAtual = (bannerAtual + 1) % banners.length;
+      document.getElementById('banner').src = banners[bannerAtual];
+    }
+
+    function iniciarBanner() {
+      intervalo = setInterval(trocaBanner, 4000);
+    }
+
+    function pausarBanner() {
+      clearInterval(intervalo);
+    }
+
+    // Inicia o banner automaticamente ao carregar a página
+    window.onload = function() {
+      iniciarBanner();
+    };
+  </script>
+</body>
+</html>

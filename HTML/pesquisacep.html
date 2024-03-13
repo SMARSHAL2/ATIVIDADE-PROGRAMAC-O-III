@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pesquisa de CEP</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="../css/cep.css">
+</head>
+<body class="degrade">
+    <a href="index.html">Voltar</a>
+<div id="main-container">
+  <h2>Pesquisa de CEP</h2>
+  <div class="full-box">
+    <label for="cep">CEP:</label>
+    <input type="text" id="cep">
+    <button id="buscarCEP">Buscar</button>
+  </div>
+  <br>
+  <div class="full-box">
+    <label for="cidade">Cidade:</label>
+    <input type="text" id="cidade">
+    <button id="buscarCidade">Buscar</button>
+  </div>
+  <br>
+  <div class="half-box">
+    <label for="cepInicial">CEP Inicial:</label>
+    <input type="text" id="cepInicial">
+    <label for="cepFinal">CEP Final:</label>
+    <input type="text" id="cepFinal">
+    <button id="buscarIntervalo">Buscar</button>
+    <textarea id="resposta" readonly></textarea>
+  </div>
+  <br>
+  <textarea id="resultado" rows="10" cols="50" readonly></textarea>
+</div>
+
+  <script src="../pesquisacep.js"></script>
+</body>
+</html>
